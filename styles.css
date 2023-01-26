@@ -1,0 +1,67 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.calculator-container{
+  background-color: black;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows:  minmax(145px, auto) repeat(5, 100px);
+  min-height: 100vh;
+}
+.span-two{
+  grid-column: span 2;
+}
+.output-container{
+  grid-column: 1 / -1;
+  color: rgb(7, 27, 21);
+  background-color: rgb(51, 182, 138);
+  margin-bottom: 15px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: flex-end;
+  border-radius: 13%;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.output-container .previous-num{
+  font-size: 1.7rem;
+}
+.output-container .current-num{
+  font-size: 2.7rem;
+  font-weight: bold;
+}
+
+.calculator-container > button{
+  font-size: 1.8em;
+  border-radius: 25%;
+  background-color: rgb(255, 255, 255, .75);
+  font-weight: normal;
+  margin: 5px;
+}
+
+.calculator-container > button:hover {
+  cursor: pointer;
+  background-color:  rgb(255, 255, 255, .9);
+}
+
+#orange{
+  background-color: rgb(250, 91, 33, .69);
+  border-radius: 50%;
+}
+#orange:hover{
+  background-color: rgb(250, 91, 33);
+}
+
+
